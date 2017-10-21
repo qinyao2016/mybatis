@@ -2,13 +2,22 @@ package tk.mybatis.simple.model;
 
 import java.util.Date;
 
-public class SysRole extends BaseModel {
+public class SysRole2 extends BaseModel {
 	private Long id;
 	private String roleName;
 	private Integer enabled;
 	private Long createBy;
 	private Date createTime;
+	private SysUser user;
 	
+	public SysUser getUser() {
+		return user;
+	}
+
+	public void setUser(SysUser user) {
+		this.user = user;
+	}
+
 	public Long getId() {
 		return id;
 	}

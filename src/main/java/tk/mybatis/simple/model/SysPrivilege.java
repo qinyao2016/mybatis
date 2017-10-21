@@ -1,6 +1,6 @@
 package tk.mybatis.simple.model;
 
-public class SysPrivilege {
+public class SysPrivilege extends BaseModel {
 	private Long id;
 	private String privilegeName;
 	private String privilegeUrl;
