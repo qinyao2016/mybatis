@@ -9,7 +9,6 @@ import tk.mybatis.simple.mapper.BaseMapperTest;
 import tk.mybatis.simple.model.Country;
 
 public class CountryMapperTest extends BaseMapperTest {
-	@Test
 	public void testSelectAll() {
 		SqlSession sqlSession = getSqlSession();
 		try {
