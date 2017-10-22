@@ -13,6 +13,7 @@ import tk.mybatis.simple.model.SysPrivilege;
  */
 public class PrivilegeMapperTest extends BaseMapperTest {	
 	
+	@Test
 	public void testSelectById() {
 		SqlSession sqlSession = getSqlSession();
 		try {
@@ -20,7 +21,7 @@ public class PrivilegeMapperTest extends BaseMapperTest {
 			SysPrivilege sysPrivilege = privilegeMapper.selectById(1L);
 			System.err.println(sysPrivilege.toString());
 			//删除
-			privilegeMapper.deleteById(9L);
+			//privilegeMapper.deleteById(9L);
 		} finally {
 			sqlSession.commit();
 			//不要忘记关闭sqlSession
